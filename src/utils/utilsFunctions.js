@@ -1,6 +1,6 @@
 const sortByPrice = (data, type) => {
 	return type
-		? type === "LOW_TO_HIGH"
+		? type === "LOW TO HIGH"
 			? data.sort((a, b) => a.price - b.price)
 			: data.sort((a, b) => b.price - a.price)
 		: data;
