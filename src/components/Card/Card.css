@@ -1,0 +1,124 @@
+.card {
+	background-color: #fdfdfd;
+	border-radius: 10px;
+	height: 380px;
+	width: 100%;
+	max-width: 340px;
+	cursor: pointer;
+	transition: box-shadow 0.6s;
+}
+
+.card:hover {
+	box-shadow: 0px 0px 4px 4px #aaa9a9;
+}
+
+.card img {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 70%;
+	transition: height 0.3s 0.2s;
+}
+
+.card:hover img {
+	height: 67%;
+}
+
+.brand {
+	color: #dbd1d1;
+	font-weight: 500;
+}
+
+.price-section {
+	gap: 6px;
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+.name {
+	width: 95%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.card .card-details {
+	padding: 4px 8px;
+	gap: 4px;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.border-box {
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+	.card {
+		width: 90%;
+		max-width: 340px;
+		height: 400px;
+	}
+
+	.card img {
+		height: 73%;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.card {
+		min-width: 220px;
+		width: 90%;
+		max-width: 340px;
+		height: 400px;
+	}
+
+	.card img {
+		height: 73%;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.card {
+		min-width: 220px;
+		width: 100%;
+		max-width: 350px;
+		height: 400px;
+	}
+
+	.card img {
+		height: 73%;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+	.card {
+		min-width: 220px;
+		width: 100%;
+		max-width: 340px;
+		height: 400px;
+	}
+
+	.card img {
+		height: 73%;
+	}
+}
