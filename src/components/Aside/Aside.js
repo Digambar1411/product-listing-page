@@ -2,7 +2,7 @@ import React from "react";
 import { useFilter } from "../../context/FilterContext";
 import "./Aside.css";
 
-function Aside({mobileAside}) {
+function Aside({mobileAside, setMobileAside}) {
 	const {
 		filterState: { brands, sizes, idealFors },
 		filterDispatch,
@@ -24,7 +24,12 @@ function Aside({mobileAside}) {
 	return (
 		<div className={`flex-col ${mobileAside ? "mobile-aside" :"aside"}`}>
 			<div className="flex-row justify-btwn aside-header">
-				<span>Filters</span>
+				{mobileAside ? <span
+                    className="material-icons-outlined close-card"
+                    onClick={() => setMobileAside(false)}
+                >
+                    close
+                </span> :<span>Filters</span>}
 				<span
 					className="clear"
 					onClick={() => filterDispatch({ type: "CLEAR", payload: "" })}

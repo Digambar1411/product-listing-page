@@ -60,7 +60,7 @@ ul {
 	gap: 8px;
 	border: none;
 	background-color: var(--color-white);
-	padding: 8px 8px;
+	padding: 10px 8px;
 	width: 50%;
 	cursor: pointer;
 }
@@ -114,13 +114,16 @@ ul {
 	.container {
 		box-sizing: border-box;
 		margin-top: 3.5rem;
+		padding:0px;
 	}
 
 	.card-container {
 		place-items: center;
 		grid-template-columns: 1fr;
-		gap: 10px;
+		gap: 1rem;
 		box-sizing: border-box;
+		padding: 0px;
+		padding-top: 10px;
 	}
 }
 

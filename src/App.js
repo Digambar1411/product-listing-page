@@ -10,7 +10,7 @@ function App() {
   return (
    <div className='app flex-col'>
       <Navbar />
-      {mobileAside && <Aside mobileAside={mobileAside} />}
+      {mobileAside && <Aside mobileAside={mobileAside} setMobileAside={setMobileAside}  />}
       <div className="section-down">
         <div className='aside-container'><Aside mobileAside={mobileAside}/></div>
         <ProductsScreen mobileAside={mobileAside} setMobileAside={setMobileAside} />

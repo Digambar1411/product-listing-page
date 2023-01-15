@@ -126,10 +126,10 @@ input[type="search"]:focus {
 	margin-left: 10px;
 }
 
-.rounded-avatar {
+.mobile-rounded-avatar {
 	border-radius: 50%;
-	height: 2.25rem;
-	width: 2.25rem;
+	height: 2rem;
+	width: 2rem;
 }
 
 .menu,
