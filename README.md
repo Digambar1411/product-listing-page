@@ -11,9 +11,12 @@ Clone the project
 
 ## Features Available.
 
-- Home Page
-- filters
-- sort by price
+- Product Filters
+  -  Brand
+  -  Size
+  -  Ideal For
+  -  Rating
+- Sort by price
 - Resposive Web app
 
 ## Tech Stack
