@@ -12,10 +12,10 @@ Clone the project
 ## Features Available.
 
 - Product Filters
-  -- Brand
-  -- Size
-  -- Ideal For
-  -- Rating
+  -  Brand
+  -  Size
+  -  Ideal For
+  -  Rating
 - Sort by price
 - Resposive Web app
 
