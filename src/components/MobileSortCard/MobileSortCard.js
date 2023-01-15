@@ -10,17 +10,24 @@ function MobileSortCard({ setSortMenu, sortTypeValues }) {
 
 	return (
 		<div className="mobile-sort-card">
-			<span
-				class="material-icons-outlined close flex-center"
-				onClick={() => setSortMenu(false)}
-			>
-				close
-			</span>
-			<ul className="flex-col flex-center">
+			<div className="mobile-sort-card-header" >
+                <span>Sort By</span>
+                <span
+                    className="material-icons-outlined close-card"
+                    onClick={() => setSortMenu(false)}
+                >
+                    close
+                </span>
+            </div>
+			
 				{sortTypeValues.map((value) => {
+
 					return (
-						<li
-							key={value}
+					<div key={value} className="mobile-sort-card-body">
+                        <label htmlFor="sort-by-price">Price --{value}</label>
+                        <input
+                            type="radio"
+                            name="sort-by-price"
 							className={sortType === value.toUpperCase() ? "active" : ""}
 							onClick={() => {
 								filterDispatch({
@@ -28,12 +35,12 @@ function MobileSortCard({ setSortMenu, sortTypeValues }) {
 									payload: value,
 								});
 							}}
-						>
-							Price --{value}
-						</li>
+                        />
+                        
+                    </div>
 					);
 				})}
-			</ul>
+		
 		</div>
 	);
 }
