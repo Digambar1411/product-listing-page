@@ -1,0 +1,155 @@
+.container {
+	background-color: var(--color-white);
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin-top: 4rem;
+	padding: 10px 0;
+}
+
+.container > p {
+	padding: 0 10px;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
+
+.product-length-section {
+	display: none;
+}
+
+.card-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 100%;
+	gap: 12px;
+	padding: 12px;
+	box-sizing: border-box;
+	place-items: center;
+}
+
+.sort-section {
+	padding: 10px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.sort-section>span{
+	font-weight: 500;
+}
+
+ul {
+	list-style: none;
+	padding-inline-start: 0px;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+}
+.sort-section > ul > li {
+	margin-left: 14px;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.sort-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 8px;
+	border: none;
+	background-color: var(--color-white);
+	padding: 8px 8px;
+	width: 50%;
+	cursor: pointer;
+}
+
+
+.sort-btn1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 6px;
+	border: none;
+	background-color: var(--color-white);
+	padding: 6px;
+	font-weight: 500;
+	cursor: pointer;
+	margin-left: 1rem
+}
+
+.sort-btn1>span{
+	font-size: 20px;
+}
+
+.filter-btn {
+	border-left: 1px solid var(--color-light-border);
+}
+
+.sort-btn span {
+	font-size: 20px;
+}
+
+.sort-btn:hover {
+	color: var(--color-light-blue);
+}
+
+.active {
+	color: var(--color-light-blue);
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+.space-around {
+	justify-content: space-evenly;
+}
+
+@media screen and (max-width: 480px) {
+	.sort-section {
+		display: none;
+	}
+
+	.container {
+		box-sizing: border-box;
+		margin-top: 3.5rem;
+	}
+
+	.card-container {
+		place-items: center;
+		grid-template-columns: 1fr;
+		gap: 10px;
+		box-sizing: border-box;
+	}
+}
+
+/*  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	
+}
+/*  */
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+	.card-container {
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+		padding: 1rem;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.product-length-section {
+		display: revert;
+	}
+}
+
+@media screen and (min-width: 1441px) {
+	.card-container {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		gap: 1rem;
+		padding: 1rem;
+		box-sizing: border-box;
+	}
+}

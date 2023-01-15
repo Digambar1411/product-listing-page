@@ -1,0 +1,59 @@
+	
+:root{
+    --color-white:#ffffff;
+    --color-light-border:#dbd8d8;
+    --color-medium--light-border:#5a5a5a;
+}
+
+.app {
+	margin: 0;
+	background-color: #f8f9fa;
+}
+
+.section-down {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	padding: 10px;
+	gap: 10px;
+}
+
+.aside-container{
+	display: revert;
+}
+
+@media screen and (max-width: 480px) {
+	.aside-container{
+		display: none;
+	}
+
+	.section-down {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.section-down {
+		grid-template-columns: 1fr;
+	}
+
+	.aside-container{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.section-down {
+		grid-template-columns: 220px 1fr;
+	}
+	.aside-container{
+		display: revert;
+	}
+}
+
+@media screen and (min-width: 1441px) {
+	.section-down {
+		grid-template-columns: 250px auto;
+	}
+}
