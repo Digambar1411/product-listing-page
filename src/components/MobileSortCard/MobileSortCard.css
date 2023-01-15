@@ -1,0 +1,53 @@
+.mobile-sort-card {
+	width: 100%;
+	z-index: 3;
+	position: fixed;
+	bottom: 0px;
+	padding: 1rem;
+	box-sizing: border-box;
+	height: max-content;
+	background-color: #fff;
+	border-top: 1px solid black;
+}
+
+.mobile-sort-card .close {
+	cursor: pointer;
+	width: 2.4rem;
+	height: 2.3rem;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: 10px;
+	background-color: #d1cfcf;
+}
+
+.mobile-sort-card .close:hover {
+	background-color: #a1a0a0;
+}
+
+.mobile-sort-card li {
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+.mobile-sort-card li:last-child {
+	padding-bottom: 1.5rem;
+}
+
+.mobile-sort {
+	display: none;
+}
+
+/* @media queries */
+
+@media screen and (max-width: 480px) {
+	.mobile-sort {
+		display: revert;
+	}
+}
+
+@media screen and (min-width: 481px) {
+	.mobile-sort,
+	.mobile-sort-card {
+		display: none;
+	}
+}
