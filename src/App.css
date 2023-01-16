@@ -54,6 +54,9 @@
 
 @media screen and (min-width: 1441px) {
 	.section-down {
-		grid-template-columns: 250px auto;
+		grid-template-columns: 1fr 5fr;
+	}
+	.aside-container{
+		display: revert;
 	}
 }

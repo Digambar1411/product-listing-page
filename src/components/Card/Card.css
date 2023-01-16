@@ -112,7 +112,7 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
 	.card {
-		min-width: 220px;
+		min-width: 180px;
 		width: 100%;
 		max-width: 340px;
 		height: 400px;
@@ -120,5 +120,23 @@
 
 	.card img {
 		height: 73%;
+	}
+}
+
+@media screen and (min-width: 1441px){
+	.card {
+		min-width: 200px;
+		width: 100%;
+		max-width: 340px;
+		height: 440px;
+	}
+
+	.card img {
+		height: 68%;
+	}
+
+	.price-section {
+		flex-wrap: wrap;
+		column-gap:10px;
 	}
 }

@@ -127,11 +127,6 @@ ul {
 	}
 }
 
-/*  */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-	
-}
-/*  */
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
 	.card-container {
@@ -145,6 +140,15 @@ ul {
 @media screen and (min-width: 1025px) {
 	.product-length-section {
 		display: revert;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1199px){
+	.card-container {
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1rem;
+		padding: 1rem;
+		box-sizing: border-box;
 	}
 }
 

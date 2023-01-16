@@ -17,7 +17,7 @@ function Card({ product }) {
 					<span>{size}</span>
 					<span>{idealFor}</span>
 				</div>
-				<div>{rating}</div>
+				<div>{"⭐".repeat(`${rating}`)}</div>
 			</div>
 		</div>
 	);
